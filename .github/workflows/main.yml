@@ -22,8 +22,8 @@ jobs:
     - name: syntaxeErreur
       run: node syntaxeErreur/starter.js
 
-    - name: wordOfCode
+    - name: worldOfCode
       run: |
-        cd wordOfCode
+        cd worldOfCode
         npm install
         npm start
