@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Test 1
+      run: echo "test"
+
+    - name: Test 2
+      run: echo "test"
+
+    - name: Test 3
+      run: echo "test"
+
+    - name: Test 4
+      run: echo "test"
