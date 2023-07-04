@@ -13,14 +13,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: List files
-      run: ls -la
+
 
     - name: randomPeers
-      run: |
-        cd randomPeers
-        node starter.js
-        
+      run: node randomPeers/starter.js
+
     - name: someSet
       run: node someSet/starter.js
 
