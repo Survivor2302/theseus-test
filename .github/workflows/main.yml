@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: randomPeers
-      run: node randomPeers/starter.js
+      run: node ../randomPeers/starter.js
 
     - name: someSet
       run: node someSet/starter.js
