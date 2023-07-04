@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: List files
+      run: ls -la
+
     - name: randomPeers
       run: node ../randomPeers/starter.js
 
