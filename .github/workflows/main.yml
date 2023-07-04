@@ -10,17 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - name: randomPeers
+      run: node randomPeers/starter.js
 
-    - name: Test 1
-      run: echo "test"
+    - name: someSet
+      run: node someSet/starter.js
 
-    - name: Test 2
-      run: echo "test"
+    - name: syntaxeErreur
+      run: node syntaxeErreur/starter.js
 
-    - name: Test 3
-      run: echo "test"
-
-    - name: Test 4
+    - name: wordOfCode
       run: echo "test"

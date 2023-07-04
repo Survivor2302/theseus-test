@@ -1,6 +1,14 @@
 function isValidClosure(string) {
+  const stack = [];
+  const closurePairs = { '{': '}', '[': ']', '(': ')' };
 
+  for (const char of string) {
+    closurePairs[char] ? stack.push(char) : closurePairs[stack.pop()] !== char && (stack.length = 1);
+  }
+
+  return stack.length === 0;
 }
+
 
 const result1 = isValidClosure("{([{}])}") // true
 const result2 = isValidClosure("([)]") // false

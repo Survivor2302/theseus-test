@@ -1,6 +1,19 @@
 function sumOfTwoDigitsInTheTable(arr, target) {
-    /* TODO */
-}
+    const tab = new Set();
+
+    for (let i = 0; i < arr.length; i++) {
+      const num = arr[i];
+      const soughtNumber  = target - num;
+  
+      if (tab.has(soughtNumber)) {
+        return true;
+      }
+  
+      tab.add(num);
+    }
+  
+    return false;
+  }
 
 const result1 = sumOfTwoDigitsInTheTable([1,8,3,6,9,2,5,12], 9) // true
 const result2 = sumOfTwoDigitsInTheTable([1,1,3,6,9,2,5,12], 14) // true

@@ -1,4 +1,3 @@
-
 let users = [
     {id:1},
     {id:2},
@@ -11,8 +10,17 @@ let users = [
 ]
 
 function randomPeer(users) {
-    /* TODO */
+  const shuffledUsers = users.sort(() => Math.random() - 0.5);
+  const pairs = [];
+
+  for (let i = 0; i < shuffledUsers.length; i += 2) {
+    const pair = shuffledUsers.slice(i, i + 2);
+    pairs.push(pair);
+  }
+
+  return pairs;
 }
+
 
 console.log(randomPeer(users))
 
