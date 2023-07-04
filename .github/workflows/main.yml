@@ -27,3 +27,6 @@ jobs:
         cd worldOfCode
         npm install
         npm start
+
+    - name: test
+      run: node test.js
