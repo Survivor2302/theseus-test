@@ -36,6 +36,10 @@ npm start
 
 Le projet comprend également des tests pour chaque fonction afin de vérifier leur bon fonctionnement. Les tests vérifient les scénarios attendus et affichent les résultats
 
+```
+node test.js
+```
+
 ## 6. Exécution des tests
 
 Ce projet utilise une pipeline d'exécution pour tester toutes les fonctions et vérifier leur bon fonctionnement.
