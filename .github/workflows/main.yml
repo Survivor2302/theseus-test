@@ -13,8 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-
-
     - name: randomPeers
       run: node randomPeers/starter.js
 
@@ -25,4 +23,7 @@ jobs:
       run: node syntaxeErreur/starter.js
 
     - name: wordOfCode
-      run: echo "test"
+      run: |
+        cd wordOfCode
+        npm install
+        npm start
